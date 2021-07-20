@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,kHAAI,CAEZ,AAAA,wBAAwB,AAAC,CACrB,cAAc,CAAE,MAAM,CACtB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CAAG,AAExB,AAAA,CAAC,AAAC,CACE,MAAM,CAAE,CAAC,CACT,UAAU,CAAE,UAAU,CACtB,WAAW,CAAE,qBAAqB,CAAG,AAEzC,AAAA,IAAI,AAAC,CACD,SAAS,CAAE,IAAI,CAAG",
+    "sources": [
+        "../sass/styles.sass",
+        "../sass/_media-queries.sass"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
