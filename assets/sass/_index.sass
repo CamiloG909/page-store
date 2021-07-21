@@ -1,0 +1,41 @@
+.signin-index
+  display: flex
+  padding: 70px 15px
+  place-items: center
+  inline-size: 100%
+  block-size: auto
+  background: $gradient-purple
+  &__img-container
+    inline-size: 55%
+    padding-inline-end: 15%
+    text-align: end
+    img
+      max-inline-size: 100%
+  &__form-container
+    inline-size: 45%
+
+.signin-form
+  max-inline-size: 430px
+  color: $white
+  &__title
+    font-size: 3.5rem
+    font-weight: bold
+    line-height: 6.5rem
+    text-align: center
+  &__redirection
+    font-size: 1.8rem
+    text-align: center
+    a
+      color: $gray
+      &:hover
+        text-decoration: none
+        color: $soft-purple
+  &__btn
+    @include btn-input
+    &-a
+      @include btn-input
+      @include btn-input__a
+      line-height: 5rem
+
+.input-form-signin
+  @include input-form
