@@ -1,7 +1,9 @@
+// First section
 .signin-index
   display: flex
+  align-items: center
+  justify-content: center
   padding: 70px 15px
-  place-items: center
   inline-size: 100%
   block-size: auto
   background: $gradient-purple
@@ -11,6 +13,7 @@
     text-align: end
     img
       max-inline-size: 100%
+      user-select: none
   &__form-container
     inline-size: 45%
 
@@ -32,10 +35,46 @@
         color: $soft-purple
   &__btn
     @include btn-input
-    &-a
-      @include btn-input
-      @include btn-input__a
-      line-height: 5rem
+    margin: 15px 0
 
 .input-form-signin
   @include input-form
+// End first section
+
+// Second section
+.signup-index
+  display: flex
+  place-items: center
+  padding: 70px 15px
+  inline-size: 100%
+  block-size: auto
+  background-color: $gray
+  &__text-container
+    position: relative
+    inline-size: 60%
+    text-align: center
+    line-height: 4.5rem
+  &__box-limiting
+    margin: 0 auto
+    max-inline-size: 700px
+  &__title
+    padding-block-end: 30px
+    font-size: 3.5rem
+    font-weight: 500
+  &__btn
+    @include btn-input
+    @include btn-input__a
+    inline-size: 200px
+    inset-inline-start: calc( 50% - 105px )
+    background-color: $dark-purple
+    &:hover
+      background-color: $purple
+    &-icon
+      margin-inline-start: 10px
+      font-size: 2.5rem
+  &__img-container
+    inline-size: 40%
+    img
+      max-inline-size: 100%
+      user-select: none
+// End second section
