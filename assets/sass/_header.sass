@@ -42,5 +42,31 @@
 // End header index
 
 // Header main
+// End header main
 
 // Header for help
+.header-help
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  inline-size: 100%
+  block-size: 58px
+  box-shadow: $shadow-header
+  background-color: $white
+  user-select: none
+  &__container-isologo
+    grid-column: 2
+    display: flex
+    align-items: center
+    justify-content: center
+  &__a
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding-inline-end: 8%
+    a
+      font-size: 1.6rem
+      color: $purple
+      &:hover
+        text-decoration: none
+        color: $dark-purple
+// End header for help

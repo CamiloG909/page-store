@@ -25,6 +25,11 @@
     font-weight: bold
     line-height: 6.5rem
     text-align: center
+  &__input
+    @include input-form
+  &__btn
+    @include btn-input
+    margin: 15px 0
   &__redirection
     font-size: 1.8rem
     text-align: center
@@ -33,12 +38,6 @@
       &:hover
         text-decoration: none
         color: $soft-purple
-  &__btn
-    @include btn-input
-    margin: 15px 0
-
-.input-form-signin
-  @include input-form
 // End first section
 
 // Second section
