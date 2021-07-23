@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#782BFF" />
-  <meta name="description" content="Empieza a comprar, tenemos envio gratis">
+  <meta name="description" content="Empieza a comprar, tenemos envíos gratis">
   <script src="https://kit.fontawesome.com/0680dcad08.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
@@ -17,7 +17,8 @@
 
 <body>
   <header class="header">
-    <section class="header__icon-menu"><span class="material-icons-outlined header__icon" title="Menú">menu</span>
+    <section class="header__icon-menu">
+      <label for="header__btn-menu"><span class="material-icons-outlined header__icon" title="Menú">menu</span></label>
     </section>
     <figure class="header__container-isologo">
       <a href="home.html"><img src="assets/img/isologo-black.png" alt="Isologo del header"></a>
@@ -28,11 +29,49 @@
       <a href="profile.html" class="header__a"><span class="material-icons-outlined header__icon"
           title="Perfil">person</span></section></a>
   </header>
+
+
   <main>
+    <input type="checkbox" id="header__btn-menu" />
+    <section class="lateral-menu">
+        <label for="header__btn-menu"><span
+            class="material-icons-outlined lateral-menu__icon-close">close</span></label>
+        <img src="assets/img/isologo-black.png" alt="Isologo del menú" class="lateral-menu__isologo">
+        <ul class="lateral-menu__ul">
+          <li><a href="home.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">home</span>
+              INICIO</a></li>
+          <li><a href="computers.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">laptop</span>
+              COMPUTADORES</a></li>
+          <li><a href="phones.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">phone_android</span> CELULARES</a></li>
+          <li><a href="shopping-cart.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">shopping_cart</span> CARRITO DE COMPRAS</a></li>
+          <li><a href="shopping-history.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">history</span> HISTORIAL DE COMPRAS</a></li>
+          <li><a href="profile.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">person</span> MI
+              PERFIL</a></li>
+          <li><a href="help.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">help_outline</span>
+              AYUDA</a></li>
+          <li><a href="index.html" class="lateral-menu__a"><span
+                class="material-icons-outlined lateral-menu__icon">logout</span> CERRAR
+              SESIÓN</a></li>
+        </ul>
+    </section>
+
     <section class="products-cards-container">
       <article>
         <figure>
-          <img src="" alt="">
+          <img src="assets/img/phone.jpg" alt="">
+          <img src="assets/img/phone.jpg" alt="">
+          <img src="assets/img/phone.jpg" alt="">
+          <img src="assets/img/phone.jpg" alt="">
+          <img src="assets/img/phone.jpg" alt="">
+          <img src="assets/img/phone.jpg" alt="">
+          <img src="assets/img/phone.jpg" alt="">
         </figure>
         <div>
           <p></p>
