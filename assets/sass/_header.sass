@@ -42,6 +42,42 @@
 // End header index
 
 // Header main
+.header
+  position: fixed
+  inset-block-start: 0
+  inset-inline-start: 0
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  inline-size: 100%
+  block-size: 58px
+  box-shadow: $shadow-header
+  background-color: $white
+  user-select: none
+  &__icon-menu
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    padding-inline-start: 6%
+  &__container-isologo
+    display: flex
+    align-items: center
+    justify-content: center
+  &__icons-right
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding-inline-end: 6%
+  &__a
+    cursor: default
+  &__icon
+    margin: 0 10px
+    font-size: 3.5rem
+    color: $black
+    cursor: pointer
+    &:hover
+      border-radius: 10px
+      background-color: $bg-icons
+      transition: 0.5s all ease
 // End header main
 
 // Header for help
