@@ -11,6 +11,7 @@
   visibility: hidden
   transition: all 0.2s ease
   transform: translateX(-100%)
+  z-index: 20
   &__ul
     padding: 70px 0 0
     list-style: none
@@ -45,6 +46,8 @@
     block-size: 30px
     user-select: none
 
+#header__btn-menu
+  display: none
 #header__btn-menu:checked~.lateral-menu
   visibility: visible
   transform: translateX(0%)
