@@ -6,5 +6,23 @@
   .product-cart
     margin: 0 auto
   .total-value-cart
-    margin: 0 auto
+    margin: 0 auto 7vh
     inline-size: 353px
+  // End shopping cart
+
+@media screen and (max-width: 850px)
+  // Profile client
+  .profile-card
+    flex-direction: column
+    width: 95%
+    &__left
+      border-block-end: none
+    &__right
+      padding: 0 20px 20px
+      border-block-start: none
+    &__btn-logout
+      padding: 5px 15px
+
+  .profile-card>section
+    width: 100%
+  // End profile client

@@ -23,9 +23,7 @@
   border: 1px solid $dark-gray
   background-color: $gray
   &__img-container
-    display: flex
-    justify-content: center
-    align-items: center
+    @include flex-center
     margin: 0 20px
     inline-size: 110px
     block-size: 110px
@@ -36,9 +34,7 @@
       inline-size: 108px
       block-size: auto
   &__text
-    display: flex
-    justify-content: start
-    align-items: center
+    @include flex-center
     padding-inline-end: 20px
     border-inline-end: 1px solid $dark-gray
   &__name
@@ -48,9 +44,7 @@
     font-family: 'Assistant', sans-serif
     color: $text-gray
   &__amount
-    display: flex
-    justify-content: center
-    align-items: center
+    @include flex-center
   &__amount-title
     font-size: 2rem
     font-weight: bold
@@ -70,7 +64,7 @@
       transition: 0.3s all ease
 
 .total-value-cart
-  margin-block-end: 480px
+  margin-block-end: 49vh
   padding: 10px 20px 20px 20px
   max-inline-size: 353px
   text-align: center
