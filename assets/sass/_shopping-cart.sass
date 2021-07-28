@@ -6,6 +6,7 @@
   padding-block-start: 30px
   inline-size: 98%
   max-inline-size: 1008px
+  min-block-size: 76vh
   justify-content: center
 
 .products-shopping-cart
@@ -34,7 +35,8 @@
       inline-size: 108px
       block-size: auto
   &__text
-    @include flex-center
+    display: flex
+    align-items: center
     padding-inline-end: 20px
     border-inline-end: 1px solid $dark-gray
   &__name
@@ -45,16 +47,16 @@
     color: $text-gray
   &__amount
     @include flex-center
-  &__amount-title
-    font-size: 2rem
-    font-weight: bold
-    line-height: 5rem
-  &__amount-number
-    @extend .product-cart__amount-title
-    font-family: 'Assistant', sans-serif
-    font-weight: 400
-    text-align: center
-    user-select: none
+    &-title
+      font-size: 2rem
+      font-weight: bold
+      line-height: 5rem
+    &-number
+      @extend .product-cart__amount-title
+      font-family: 'Assistant', sans-serif
+      font-weight: 400
+      text-align: center
+      user-select: none
   &__icons
     padding: 0 5px 4px
     font-size: 2.5rem
