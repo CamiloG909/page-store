@@ -1,3 +1,4 @@
+// Inputs text
 @mixin input-form
   margin: 7px 0
   padding: 10px 4%
@@ -12,6 +13,7 @@
     border: 2px solid $purple
     transition: 0.3s all ease
 
+// Button input base
 @mixin btn-input
   inline-size: 100%
   block-size: 45px
@@ -26,10 +28,12 @@
     background-color: $dark-purple
     transition: 0.5s all ease
 
+// Button input base a
 @mixin btn-input__a
   text-decoration: none
   user-select: none
 
+// Inputs select
 @mixin input-select
   border: 2px solid transparent
   background-color: transparent
@@ -37,17 +41,20 @@
   option
     background-color: $gray
 
+// Product page titles
 @mixin title-product
   font-size: 2rem
   font-weight: bold
   line-height: 4rem
 
+// Text styles gray
 @mixin text-gray
   font-size: 2rem
   font-weight: lighter
   line-height: 2.5rem
   color: $text-gray
 
+// Display flex center
 @mixin flex-center
   display: flex
   justify-content: center
