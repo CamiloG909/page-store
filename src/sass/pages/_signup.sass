@@ -1,22 +1,21 @@
 .signup
-  @include flex-center
+  @include flex-center (space-between)
+  padding: 4rem 0
   margin: 58px auto 0
-  padding: 0 20px
-  max-inline-size: 1250px
+  max-inline-size: 1120px
   &__img-container
-    inline-size: 55%
+    inline-size: 60%
+    max-inline-size: 630px
     img
       inline-size: 100%
-      max-inline-size: 655px
+      max-inline-size: 630px
       user-select: none
   &__form-container
-    display: flex
-    justify-content: flex-end
-    inline-size: 45%
-    padding: 4rem
+    inline-size: 40%
+    max-inline-size: 430px
 
 .signup-form
-  max-inline-size: 470px
+  max-inline-size: 430px
   &__title
     margin: 0 0 1rem
     font-size: 4rem
@@ -25,15 +24,15 @@
   &__input
     @include input-form
     &--select
-      inline-size: 25%
+      inline-size: 18%
       margin-block-end: 3px
       appearance: none
     &--short
-      inline-size: 71%
+      inline-size: 78%
       margin-inline-start: 3%
       margin-block-end: 3px
   &__only-numbers
-    margin-inline-start: 33%
+    margin-inline-start: 26%
     font-size: 1.3rem
     color: $purple
   &__btn
@@ -42,6 +41,7 @@
   &__redirection
     font-size: 2rem
     text-align: center
+    color: $text-gray
     a
       color: $purple
       &:hover

@@ -13,16 +13,20 @@
   block-size: 10px
 
 ::-webkit-scrollbar-thumb
-  background-color: $dark-purple
+  background-color: $dark-gray
   border-radius: 20px
   border: 1px solid $white
 
 ::-webkit-scrollbar-thumb:hover
-  background-color: $dark-gray
+  background-color: #979797
 
 ::-webkit-scrollbar-track
   border-radius: 10px
 /* END SCROLL */
+
+::selection
+  color: $white
+  background: $purple
 
 /* INPUT NUMBER OFF */
 input[type="number"]::-webkit-inner-spin-button,
@@ -41,11 +45,6 @@ input[type="number"]
 
 html
     font-size: 10px
-
-.material-icons-outlined
-    vertical-align: middle
-    font-size: 10px
-    user-select: none
 
 .title-page
   margin-block-start: 4px

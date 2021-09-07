@@ -64,6 +64,6 @@ gulp.task('babel', () =>
 // Defaul task
 gulp.task('default', () => {
 	gulp.watch('./src/pages/*.html', gulp.series('html-min'))
-	gulp.watch('./src/sass/styles.sass', gulp.series('sass'))
+	gulp.watch('./src/sass/**/*.sass', gulp.series('sass'))
 	gulp.watch('./src/js/**/*.js', gulp.series('babel'))
 })

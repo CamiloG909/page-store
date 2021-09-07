@@ -1,11 +1,14 @@
 .profile-section
   @include flex-center
   margin-block-start: 58px
-  min-block-size: 85vh
+  padding: 50px 0
 
 .profile-card
   @include flex-center
-  inline-size: 860px
+  inline-size: 752px
+  min-block-size: 76vh
+  section
+    background-color: $gray
   &__left
     @include flex-center
     inline-size: 232px
@@ -24,7 +27,7 @@
       inline-size: 198px
       block-size: auto
   &__right
-    max-inline-size: 580px
+    inline-size: 520px
     max-block-size: 500px
     text-align: center
     padding: 15px 30px 20px

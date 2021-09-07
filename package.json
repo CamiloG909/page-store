@@ -1,10 +1,9 @@
 {
 	"name": "danca_store",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Tienda online para la compra de celulares y computadores de forma rápida y segura",
 	"main": "src/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky install"
 	},
 	"repository": {

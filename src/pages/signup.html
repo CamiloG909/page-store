@@ -10,10 +10,6 @@
 			content="Crea tu cuenta ahora para empezar a comprar"
 		/>
 		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
-		/>
-		<link
 			rel="shortcut icon"
 			href="assets/img/favicon.png"
 			type="image/x-icon"
@@ -24,13 +20,15 @@
 
 	<body>
 		<header class="header-help">
-			<figure class="header-help__container-isologo">
-				<a href="index.html"
-					><img src="assets/img/isologo-black.png" alt="Isologo del header"
-				/></a>
-			</figure>
-			<div class="header-help__a">
-				<a href="help.html" target="_blank">Ayuda</a>
+			<div class="header-help__limit">
+				<figure class="header-help__container-isologo">
+					<a href="index.html"
+						><img src="assets/img/isologo-black.png" alt="Isologo del header"
+					/></a>
+				</figure>
+				<div class="header-help__a">
+					<a href="help.html" target="_blank">Ayuda</a>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -62,6 +60,7 @@
 							<select
 								class="signup-form__input signup-form__input--select"
 								name="type-document"
+								title="Selecciona el tipo de documento"
 							>
 								<option value="CC">C.C</option>
 								<option value="CE">C.E</option>
