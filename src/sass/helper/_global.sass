@@ -10,24 +10,22 @@
 	border: 2px solid $soft-purple
 	background-color: $soft-purple
 	outline: none
+	transition: 0.3s all ease
 	&:focus
 		border: 2px solid $purple
-		transition: 0.3s all ease
 
 // Button input base
 @mixin btn-input
 	inline-size: 100%
 	block-size: 45px
-	font-size: 2rem
-	font-weight: bold
+	@include font(bold,2rem,normal,$white)
 	border: 0
 	border-radius: 15px
-	color: $white
 	background-color: $purple
 	cursor: pointer
+	transition: 0.5s all ease
 	&:hover
 		background-color: $dark-purple
-		transition: 0.5s all ease
 
 // Button input base a
 @mixin btn-input__a
@@ -43,25 +41,6 @@
 	option
 		background-color: $gray
 
-// Product page titles
-@mixin title-product
-	font-size: 2rem
-	font-weight: bold
-	line-height: 4rem
-
-// Text styles gray
-@mixin text-gray
-	font-size: 2rem
-	font-weight: inherit
-	line-height: 2.5rem
-	color: $text-gray
-
-// Display flex center
-@mixin flex-center ($justify: center, $align: center)
-	display: flex
-	justify-content: $justify
-	align-items: $align
-
 // Fonts
 @mixin font ($weight: normal, $size: 1.6rem, $line: normal, $color: $black, $font: $main-font)
 	font-weight: $weight
@@ -69,6 +48,20 @@
 	line-height: $line
 	color: $color
 	font-family: $font
+
+// Product page titles
+@mixin title-product
+	@include font(bold,2rem,4rem)
+
+// Text styles gray
+@mixin text-gray
+	@include font (inherit,2rem,2.5rem,$text-gray)
+
+// Display flex center
+@mixin flex-center ($justify: center, $align: center)
+	display: flex
+	justify-content: $justify
+	align-items: $align
 
 // Background images
 @mixin bg-image ($url-image: none)
