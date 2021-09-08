@@ -11,16 +11,14 @@
 		max-inline-size: 700px
 	&__h1
 		margin: 30px 0
-		font-size: 3.5rem
+		font-size: 4rem
 		color: $black
 	&__p
-		font-size: 2rem
-		font-weight: 500
-		color: $purple
+		@include font(500,2rem,normal,$purple)
 
 .header-index-btn
 	position: absolute
-	inset-block-end: -25px
+	inset-block-end: -22px
 	inset-inline-start: calc( 50% - 88px )
 	@include flex-center
 	padding: 15px 20px
@@ -66,12 +64,13 @@
 	&__a
 		cursor: default
 	&__icon
-		margin: 0 10px
-		font-size: 3.5rem
+		margin: 0 6px
+		padding: 0 4.5px
+		font-size: 3rem
 		color: $black
 		cursor: pointer
+		border-radius: 10px
 		&:hover
-			border-radius: 10px
 			background-color: $bg-icons
 			transition: 0.5s all ease
 		&:active
@@ -105,10 +104,11 @@
 		justify-content: flex-end
 		padding-inline-end: 8%
 		a
-			font-size: 1.6rem
+			text-decoration: none
+			font-size: 1.4rem
 			color: $purple
 			&:hover
-				text-decoration: none
+				text-decoration: underline
 				color: $dark-purple
 // End header for help
 
