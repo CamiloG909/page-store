@@ -1,3 +1,0 @@
-npm uninstall husky
-npm uninstall mrm lint-staged
-delete line "prepare of package.json"
