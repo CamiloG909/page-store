@@ -1,3 +1,4 @@
 # Danca Store
 
-Tienda online de celulares y computadores
+Online store for cell phones and computers
+With Express, PostgreSQL, Handlebars, Sass
