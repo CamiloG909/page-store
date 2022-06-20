@@ -1,3 +1,3 @@
-# Danca Store
+# Ecommerce (Danca Store) with HBS, Express and PostgreSQL
 
-Tienda online de celulares y computadores
+Deploy✨ https://page-danca-store.camilog909.repl.co/
